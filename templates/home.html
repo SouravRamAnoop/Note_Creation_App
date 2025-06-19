@@ -2,12 +2,14 @@
 
 {% block content %}
 <div class="text-center py-5">
-  <h1>Welcome to SimpleApp</h1>
-  <p class="lead">A basic Django project with login, signup, and CRUD notes functionality.</p>
+  
   {% if user.is_authenticated %}
-    <p>Hello {{user}}</p>
-    <a href="{% url 'note_list' %}" class="btn btn-primary mt-3">Go to My Notes</a>
+  <h1>Welcome to NoteDesk {{ user.username|upper }}</h1>
+  <p class="lead">A basic Django project with login, signup, and CRUD notes functionality.</p>
+  <a href="{% url 'note_list' %}" class="btn btn-primary mt-3">Go to My Notes</a>
   {% else %}
+  <h1>Welcome to NoteDesk  {{user.}}</h1>
+  <p class="lead">A basic Django project with login, signup, and CRUD notes functionality.</p>
     <a href="{% url 'signup' %}" class="btn btn-success mt-3">Get Started</a>
   {% endif %}
 </div>

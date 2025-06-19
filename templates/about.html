@@ -2,15 +2,26 @@
 
 {% block content %}
 <div class="container py-5">
-  <h2>About SimpleApp</h2>
-  <p class="mt-3">
-    SimpleApp is a beginner-friendly Django project designed to demonstrate core features of web applications like:
+  <h2 class="mb-4">About NoteDesk</h2>
+  
+  <p>
+    <strong>NoteDesk</strong> is a personal note management web application built using Django. It allows users to create, save, and manage their own notes securely.
   </p>
+  
+  <p class="mt-3">
+    Each user has their own private space where they can:
+  </p>
+
   <ul class="mt-3">
-    <li>User authentication (sign up, log in, log out)</li>
-    <li>Basic CRUD (Create, Read, Update, Delete) for personal notes</li>
-    <li>Bootstrap-based UI for clean and responsive design</li>
+    <li><strong>Create Notes:</strong> Add a note with a title and detailed description.</li>
+    <li><strong>View Notes:</strong> Access only your own saved notes after logging in.</li>
+    <li><strong>Edit & Delete:</strong> Update or remove your notes as needed.</li>
+    <li><strong>Authentication:</strong> Secure user login, signup, and logout system.</li>
+    <li><strong>Responsive Design:</strong> Clean and mobile-friendly interface using Bootstrap.</li>
   </ul>
-  <p class="mt-3">This project is ideal for learning Django basics without using Django REST Framework.</p>
+
+  <p class="mt-3">
+    NoteDesk is ideal for anyone who wants a simple, secure, and personalized note-taking experience while also learning core Django concepts like models, views, templates, and user authentication.
+  </p>
 </div>
 {% endblock %}
